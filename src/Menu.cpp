@@ -66,6 +66,10 @@ void Menu::initialize(void)
 void Menu::update(void)
 {
     
+    for(int i = 0; i < numStars; i++)
+    {
+        stars[i].update(i);
+    }
     //if state is 0, run through the scrolling letters sequence
     if(state == 0)
     {
@@ -86,6 +90,7 @@ void Menu::update(void)
 
 void Menu::draw(void)
 {
+        
     ofSetColor(255,191,64);
     
     //state 0 is for scrolling intro
@@ -109,18 +114,22 @@ void Menu::draw(void)
         
         GalaxyAlt80.drawString("STAR WARS", ofGetWidth()/2 - GalaxyAlt80.stringWidth("STAR WARS")/2, 200);
     }
+    
+    for(int i = 0; i < numStars; i++)
+    {
+        stars[i].draw();
+    }
+
 }
 
 
 
-
+//call thsi function to get the newest selection ID (zero = "resume")
 int Menu::getSelection(void)
 {
     ofLog() <<"getSelection Called... Selection is: " << selection;
     return selection;
 }
-
-
 
 
 //call this function in the mousePressed() function of testApp.cpp
@@ -162,6 +171,7 @@ void Menu::select(const int mX, const int mY)
 
     
 }
+
 
 
 
