@@ -11,6 +11,7 @@
 		C15B872D1837D2BB00B191C8 /* Menu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C15B872B1837D2BB00B191C8 /* Menu.cpp */; };
 		C15B87321837FBDD00B191C8 /* r2d2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C15B87301837FBDD00B191C8 /* r2d2.cpp */; };
 		C17632CD18414701003DA639 /* Star.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C17632CB18414701003DA639 /* Star.cpp */; };
+		C17632D1184162F7003DA639 /* WorldBox.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C17632CF184162F7003DA639 /* WorldBox.cpp */; };
 		E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4328148138ABC890047C5CB /* openFrameworksDebug.a */; };
 		E45BE97B0E8CC7DD009D7055 /* AGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE9710E8CC7DD009D7055 /* AGL.framework */; };
 		E45BE97C0E8CC7DD009D7055 /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE9720E8CC7DD009D7055 /* ApplicationServices.framework */; };
@@ -70,6 +71,8 @@
 		C15B87311837FBDD00B191C8 /* r2d2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = r2d2.h; sourceTree = "<group>"; };
 		C17632CB18414701003DA639 /* Star.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Star.cpp; sourceTree = "<group>"; };
 		C17632CC18414701003DA639 /* Star.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Star.h; sourceTree = "<group>"; };
+		C17632CF184162F7003DA639 /* WorldBox.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WorldBox.cpp; sourceTree = "<group>"; };
+		C17632D0184162F7003DA639 /* WorldBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorldBox.h; sourceTree = "<group>"; };
 		E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = openFrameworksLib.xcodeproj; path = ../../../libs/openFrameworksCompiled/project/osx/openFrameworksLib.xcodeproj; sourceTree = SOURCE_ROOT; };
 		E45BE9710E8CC7DD009D7055 /* AGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AGL.framework; path = /System/Library/Frameworks/AGL.framework; sourceTree = "<absolute>"; };
 		E45BE9720E8CC7DD009D7055 /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = /System/Library/Frameworks/ApplicationServices.framework; sourceTree = "<absolute>"; };
@@ -202,6 +205,8 @@
 				C15B872C1837D2BB00B191C8 /* Menu.h */,
 				C17632CB18414701003DA639 /* Star.cpp */,
 				C17632CC18414701003DA639 /* Star.h */,
+				C17632CF184162F7003DA639 /* WorldBox.cpp */,
+				C17632D0184162F7003DA639 /* WorldBox.h */,
 			);
 			path = src;
 			sourceTree = SOURCE_ROOT;
@@ -307,6 +312,7 @@
 				C15B872D1837D2BB00B191C8 /* Menu.cpp in Sources */,
 				C15B87321837FBDD00B191C8 /* r2d2.cpp in Sources */,
 				C17632CD18414701003DA639 /* Star.cpp in Sources */,
+				C17632D1184162F7003DA639 /* WorldBox.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

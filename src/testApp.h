@@ -3,6 +3,7 @@
 
 #include "ofMain.h"
 #include "Menu.h"
+#include "WorldBox.h"
 
 class testApp : public ofBaseApp{
 
@@ -25,6 +26,7 @@ class testApp : public ofBaseApp{
     int state;
     
     Menu menu;   //set up menu object
+    WorldBox WorldBox;
     
     
     

@@ -2,11 +2,10 @@
 
 //--------------------------------------------------------------
 void testApp::setup(){
-    
     state = 0;
     
     
-}
+    }
 
 //--------------------------------------------------------------
 void testApp::update()
@@ -17,6 +16,9 @@ void testApp::update()
     {
     menu.update();
     }
+   
+    
+    
     
     
 }
@@ -29,10 +31,44 @@ void testApp::draw()
     {
     menu.draw();
     }
+    else if (1 == state)
+    {
+        WorldBox.draw();
+    }
 }
 
 //--------------------------------------------------------------
 void testApp::keyPressed(int key){
+    
+    
+    switch(key) {
+        case OF_KEY_RIGHT:
+            WorldBox.boxx+=100;
+            break;
+        case OF_KEY_LEFT:
+            WorldBox.boxx-=100;
+            break;
+        case OF_KEY_UP:
+            WorldBox.boxy-=100;
+            break;
+        case OF_KEY_DOWN:
+            WorldBox.boxy+=100;
+            break;
+        case 'z':
+            WorldBox.boxz+=10;
+            break;
+        case 'x':
+           WorldBox.boxz-=10;
+            break;
+	}
+    
+
+    
+    
+    if(key==' ')
+    {
+        state = 0;
+    }
 
 }
 
