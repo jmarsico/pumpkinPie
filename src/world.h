@@ -1,39 +1,8 @@
 #ifndef WORLD_IS_INCLUDED
 #define WORLD_IS_INCLUDED
 
-/////////////////////////////////////////////////////
-enum pType { EMPTY };
-
-class Participant
-{
-protected:
-	int width, height, length;
-
-public:
-	int x, y, z;
-
-	pType getType(void);
-	int getWidth(void);
-	int getHeight(void);
-	int getLength(void);
-};
-
-class Empty : public Participant
-{
-};
-
-class Obstacle : public Participant
-{
-};
-
-class Player : public Participant
-{
-};
-
-class Enemy : public Participant
-{
-};
-////////////////////////////////////////////////////
+#include "Participant.h"
+#include <stdio.h>
 
 enum Level { EASY, NORMAL, HARDCORE };
 
@@ -47,15 +16,16 @@ public:
 	~WorldCell();
 	void CleanUp(void);
 	void Initialize(void);
-	bool IsEmpty(Participant *inhabitant) const;
+	bool IsCellEmpty(Participant *inhabitant) const;
 	void InsertParticipant(Participant participant);
 	void RemoveParticipant(void);
+    bool IsFull(void) const;
 };
 
 class World
 {
 protected:
-	const int nObstacles = 10;
+	static const int nObstacles = 10;
 	const int dispSectSize = 100;
 	int totalZ;
 	int dispObstacleStart, dispObstacleEnd, dispEnemyStart, dispEnemyEnd, zCounter;
@@ -74,7 +44,7 @@ public:
 	void Generate(Level level);
 	void InsertParticipant(Participant participant);
 	void AdvanceDispSect(void);
-	bool CollisionDetection(void);
+	bool CollisionDetection(Player player);
 	bool CheckMapEnd(void) const;
 	const Obstacle* GetObsListPointer(void)const;
 	const int GetDispObsStart(void) const;

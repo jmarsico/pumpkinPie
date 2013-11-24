@@ -25,6 +25,7 @@ private:
 public:
     float y;
     int state;
+    int difficulty;
     
     Menu();
     void initialize(void);   //you don't need to call this, it is called in the constructor
@@ -55,6 +56,8 @@ public:
     
     
     
+    
+    
     //arrays to keep track of width and height of each string
     int strwdthLine[4];
     int strhghtLine[4];
@@ -63,6 +66,8 @@ public:
     int strwdthLevel[4];
     int strhghtLevel[4];
     
+    int strwdthDiffclt[3];
+    int strhghtDiffclt[3];
 };
 
 #endif /* defined(__pumpkinPie__Menu__) */

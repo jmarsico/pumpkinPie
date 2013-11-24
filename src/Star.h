@@ -15,10 +15,10 @@
 
 class Star{
 private:
-    float x, y, a;
+    float x, y, alpha;
     void initialize(void);
     float speed, ampA, time, timeInc;
-    int rad, posA;
+    int rad;
 
 public:
     

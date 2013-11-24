@@ -29,15 +29,13 @@ void Star::initialize(void)
 
 void Star::update(int ID)
 {
-    
-    posA = ID;
-    a = ampA * ofNoise(time*speed+posA);
+    alpha = ampA * ofNoise(time*speed+ID);
     time = ofGetElapsedTimef();
 }
 
 void Star::draw(void)
 {
     ofFill();
-    ofSetColor(255, 255, 255, a);
+    ofSetColor(255, 255, 255, alpha);
     ofCircle(x,y, rad);
 }

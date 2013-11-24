@@ -5,8 +5,15 @@ Game::Game(int level){
     /*
     
     */
+<<<<<<< HEAD
     
     initialize(difficulty);
+=======
+    difficulty = level;
+    player.
+    initialize(level);
+
+>>>>>>> 5f1fee16e1c2b58a0dfee0a16a4d83b2c9c1e9c9
 }
 
 Game::~Game(void){

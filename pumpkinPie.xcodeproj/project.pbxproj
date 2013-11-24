@@ -14,6 +14,8 @@
 		C17632D1184162F7003DA639 /* WorldBox.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C17632CF184162F7003DA639 /* WorldBox.cpp */; };
 		C17632D518416B3F003DA639 /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C17632D318416B3F003DA639 /* Game.cpp */; };
 		C17632D91841754F003DA639 /* Xwing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C17632D71841754F003DA639 /* Xwing.cpp */; };
+		C1B37A6C184282810019EA5C /* world.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C1B37A6B184282810019EA5C /* world.cpp */; };
+		C1B37A6F18428CCE0019EA5C /* Participant.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C1B37A6E18428CCE0019EA5C /* Participant.cpp */; };
 		E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4328148138ABC890047C5CB /* openFrameworksDebug.a */; };
 		E45BE97B0E8CC7DD009D7055 /* AGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE9710E8CC7DD009D7055 /* AGL.framework */; };
 		E45BE97C0E8CC7DD009D7055 /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE9720E8CC7DD009D7055 /* ApplicationServices.framework */; };
@@ -79,6 +81,10 @@
 		C17632D418416B3F003DA639 /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
 		C17632D71841754F003DA639 /* Xwing.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Xwing.cpp; sourceTree = "<group>"; };
 		C17632D81841754F003DA639 /* Xwing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Xwing.h; sourceTree = "<group>"; };
+		C1B37A6B184282810019EA5C /* world.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = world.cpp; sourceTree = "<group>"; };
+		C1B37A6D184287220019EA5C /* world.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = world.h; sourceTree = "<group>"; };
+		C1B37A6E18428CCE0019EA5C /* Participant.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Participant.cpp; sourceTree = "<group>"; };
+		C1B37A7018428CEE0019EA5C /* Participant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Participant.h; sourceTree = "<group>"; };
 		E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = openFrameworksLib.xcodeproj; path = ../../../libs/openFrameworksCompiled/project/osx/openFrameworksLib.xcodeproj; sourceTree = SOURCE_ROOT; };
 		E45BE9710E8CC7DD009D7055 /* AGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AGL.framework; path = /System/Library/Frameworks/AGL.framework; sourceTree = "<absolute>"; };
 		E45BE9720E8CC7DD009D7055 /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = /System/Library/Frameworks/ApplicationServices.framework; sourceTree = "<absolute>"; };
@@ -202,6 +208,10 @@
 		E4B69E1C0A3A1BDC003C02F2 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				C1B37A6E18428CCE0019EA5C /* Participant.cpp */,
+				C1B37A7018428CEE0019EA5C /* Participant.h */,
+				C1B37A6D184287220019EA5C /* world.h */,
+				C1B37A6B184282810019EA5C /* world.cpp */,
 				C17632D71841754F003DA639 /* Xwing.cpp */,
 				C17632D81841754F003DA639 /* Xwing.h */,
 				E4B69E1D0A3A1BDC003C02F2 /* main.cpp */,
@@ -325,6 +335,8 @@
 				C17632D1184162F7003DA639 /* WorldBox.cpp in Sources */,
 				C17632D518416B3F003DA639 /* Game.cpp in Sources */,
 				C17632D91841754F003DA639 /* Xwing.cpp in Sources */,
+				C1B37A6C184282810019EA5C /* world.cpp in Sources */,
+				C1B37A6F18428CCE0019EA5C /* Participant.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
