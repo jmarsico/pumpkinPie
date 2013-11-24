@@ -1,8 +1,13 @@
 #include "testApp.h"
+//state = 0 = show menu and don't update/draw gameplay
+//state = 1 = transition state, only for creating world based on menu selection
+//state = 2 = game play
+
 
 //--------------------------------------------------------------
 void testApp::setup(){
     state = 0;
+    
     
     
     }
@@ -16,6 +21,7 @@ void testApp::update()
     {
     menu.update();
     }
+    
    
     
     

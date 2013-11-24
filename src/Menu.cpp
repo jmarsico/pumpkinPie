@@ -36,7 +36,7 @@ void Menu::initialize(void)
     GalaxyAlt14.setLineHeight(34.0f);
     
     
-    //set up variables for width and height of each line
+    //set up variables for width and height of each intro line
     for(int i = 0; i < 4; i++)
     {
         strwdthLine[i] = GalaxyAlt30.stringWidth(line[i]);
@@ -50,11 +50,11 @@ void Menu::initialize(void)
         strhghtLevel[i] = GalaxyAlt14.stringHeight(level[i]);
     }
     
-        
+            
     
         
     y = ofGetHeight() + 200;        //initialize location of scrolling intro
-    state = 1;                      // state 0 is for when intro text scrolls
+    state = 0;                      // state 0 is for when intro text scrolls
     selection = 0;                  //selection 0 means nothing has been selected
 
 }
