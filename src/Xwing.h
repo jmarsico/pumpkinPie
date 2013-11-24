@@ -22,6 +22,10 @@ public:
 	ofBoxPrimitive pbody;
 	ofCylinderPrimitive pcyl[8];
 	ofBoxPrimitive pwings[4];
+    
+    ofLight pointLight;
+    ofMaterial material;
+
 
 	vector<ofMeshFace> triangles;
 

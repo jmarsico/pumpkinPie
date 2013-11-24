@@ -33,6 +33,15 @@ void Xwing::Initialize(void)
 	pwings[2].roll(32);
 	pwings[1].roll(-32);
 	pwings[3].roll(-32);
+    
+    
+    ofSetSmoothLighting(true);
+    pointLight.setDiffuseColor(ofFloatColor(1.f,1.f,1.f));
+    pointLight.setSpecularColor(ofFloatColor(.7,.7,.7));
+    pointLight.setPosition(ofGetWidth()-30, 200, 500);
+    
+    material.setShininess(100);
+    material.setSpecularColor(ofColor(200,200,200));
 
 }
 
@@ -41,9 +50,15 @@ void Xwing::SetPosition(double xx, double yy, double zz)
 	x = xx;
 	y = yy; 
 	z = zz;
+    
+    
 }
 
 void Xwing::Draw(void){
+    
+    ofEnableLighting();
+    pointLight.enable();
+
 	ofEnableDepthTest();
 
 	pbody.setPosition(x,y, z);
@@ -59,6 +74,8 @@ void Xwing::Draw(void){
 	pwings[1].setPosition(x+15,y-8.75,z+7.5);
 	pwings[2].setPosition(x+15,y+8.75,z+7.5);
 	pwings[3].setPosition(x-15,y+8.75,z+7.5);
+    
+    material.begin();
 
 
    
