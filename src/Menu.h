@@ -11,6 +11,7 @@
 
 #include <iostream>
 #include "r2d2.h"
+#include "Star.h"
 #include "ofMain.h"
 #pragma once
 
@@ -18,6 +19,8 @@ class Menu
 {
 private:
     int selection;          //controll class can call getSelection();
+    void backgroundStuff(void);
+    static const int numStars = 400;
 
 public:
     float y;
@@ -34,6 +37,10 @@ public:
     ofTrueTypeFont GalaxyAlt14;                 //type object (14pt)
     ofTrueTypeFont GalaxyAlt80;                 //type font for title (80pt)
     r2d2 R2d2;
+    
+    
+    
+    Star stars[numStars];
     
    
     
