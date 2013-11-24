@@ -2,10 +2,8 @@
 //  Menu.cpp
 //  pumpkinPie
 //
-//  Created by Jakob Marsico on 11/16/13.
-//
-//
-//
+//  Created by Pumpkin Pie Team on 11/16/13.
+
 
 #include "Menu.h"
 

@@ -30,7 +30,6 @@ public:
     int sphRad = 80;
     
     ofLight pointLight;
-
     
     ofImage texture;
     ofMaterial material;

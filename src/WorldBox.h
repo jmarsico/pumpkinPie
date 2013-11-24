@@ -11,6 +11,7 @@
 
 #include <iostream>
 #include "ofMain.h"
+#include "xwing.h"
 #pragma once
 
 class WorldBox
@@ -22,8 +23,12 @@ public:
     double width, height;
     bool bWireframe;
     
+    Xwing xwing;
+    
     ofBoxPrimitive world;
     ofBoxPrimitive worldCell;
+    
+    
     
     WorldBox();
     void initialize(void);

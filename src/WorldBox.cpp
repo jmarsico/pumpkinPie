@@ -41,8 +41,9 @@ void WorldBox::draw(void)
 	ofSetFrameRate(60);
     
     
-	worldCell.setPosition(boxx, boxy, boxz);
+	//worldCell.setPosition(boxx, boxy, boxz);
     world.setPosition(width/2, height/2, boxz);
+    xwing.SetPosition(boxx, boxy, boxz);
     
 	//vector<ofMeshFace> triangles = world.getMesh().getUniqueFaces();
     //ofSetColor(255,0,0);
@@ -54,6 +55,8 @@ void WorldBox::draw(void)
     
     ofSetColor(255,0,0);
     worldCell.drawWireframe();
+    
+    xwing.Draw();
     
 	ofDisableDepthTest();
 	

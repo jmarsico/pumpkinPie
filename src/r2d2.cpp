@@ -35,21 +35,23 @@ void r2d2::initialize(void)
 	material.setSpecularColor(ofColor(255, 255, 255, 255));
     
     
-    texture.loadImage("of.png");
+    // GL_REPEAT for texture wrap only works with NON-ARB textures //
+    ofDisableArbTex();
+    texture.loadImage("R2D2skin.jpg");
     texture.getTextureReference().setTextureWrap( GL_REPEAT, GL_REPEAT );
 }
 
 void r2d2::draw(void)
 {
      
-    
+    texture.getTextureReference().bind();
     pointLight.setPosition((ofGetWidth()*.5)+ cos(ofGetElapsedTimef()*.5)*(ofGetWidth()*.3), ofGetHeight()/2, 500);
     
     ofEnableLighting();
     pointLight.enable();
     
     ofEnableDepthTest();
-    
+    cylinder.mapTexCoordsFromTexture( texture.getTextureReference() );
     material.begin();
     
     
@@ -80,13 +82,13 @@ void r2d2::draw(void)
     cylinder.draw();
  
     
-   
-    
     ofNoFill();
     ofSetColor(0, 0, 0);
     cylinder.setScale(1.01f);
     //cylinder.drawWireframe();
     cylinder.setScale(1.0f);
+    
+    
     
     
 

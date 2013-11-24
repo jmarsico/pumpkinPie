@@ -4,6 +4,7 @@
 #include "ofMain.h"
 #include "Menu.h"
 #include "WorldBox.h"
+#include "xwing.h"
 
 class testApp : public ofBaseApp{
 
@@ -27,6 +28,7 @@ class testApp : public ofBaseApp{
     
     Menu menu;   //set up menu object
     WorldBox WorldBox;
+    
     
     
     
