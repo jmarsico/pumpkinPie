@@ -5,6 +5,7 @@ Game::Game(int level){
     /*
     
     */
+    
     initialize(difficulty);
 }
 
@@ -28,7 +29,7 @@ void Game::initialize(int level){
     
     difficulty = level;
     player.initialize();
-    world = new World();
+    world = new WorldBox();
     world.initialize();
     isGameOn = true;
     
@@ -36,7 +37,7 @@ void Game::initialize(int level){
 
 void Game::update(void){
     // TODO: update missiles
-    world.advance();
+    worldBox.advance();
     // check for a collision between player and an obstacle
     
 }
@@ -57,7 +58,7 @@ void Game::draw(void){
 void Game::endGame(void){
     // TODO: cleanup world, enemies, initialEnemyPositions
     isGameOn = false;
-    world.cleanup();
+    worldBox.cleanup();
     
 }
 
