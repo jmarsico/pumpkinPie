@@ -9,7 +9,6 @@
 #ifndef __pumpkinPie__Game__
 #define __pumpkinPie__Game__
 
-#include <iostream>
 #include "Participant.h"
 #include "ofMain.h"
 
@@ -22,8 +21,13 @@ enum Direction{
 
 class Game{
 public:
+    Game(int level);
+    ~Game(void);
+    
+    void cleanUp(void);
+    
     // initializes the fields (mui importante) and starts game
-    void initialize(void);
+    void initialize(int level);
     
     // updates by advancing position of enemies, missiles, and the displayed section
     void update(void);
@@ -39,15 +43,18 @@ public:
     void playerShoot(void);
     
 private:
+    int difficulty;
     Player player;
     
     World world;
     bool isGameOn;
 
     // enemy variables
+    
     //static int numEnemies = 1;
     //int * initialEnemyPositions;
     //Participant * enemies;
+    
     //EnemyBoss boss;
 };
 

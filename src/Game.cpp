@@ -1,14 +1,32 @@
 
 #include "Game.h"
 
-void Game::initialize(void){
-    /*initialEnemyPositions = new int[2*numEnemies];
+Game::Game(int level){
+    /*
+    
+    */
+    initialize(difficulty);
+}
+
+Game::~Game(void){
+    cleanUp();
+}
+
+void Game::cleanUp(void){
+    
+}
+
+void Game::initialize(int level){
+    /*
+    
+    initialEnemyPositions = new int[2*numEnemies];
     enemies = new Participant[numEnemies]
     for (int i = 0; i < numEnemies; i++){
         enemies
     }
     */
     
+    difficulty = level;
     player.initialize();
     world = new World();
     world.initialize();
