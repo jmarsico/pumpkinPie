@@ -9,8 +9,9 @@
 #ifndef __pumpkinPie__Game__
 #define __pumpkinPie__Game__
 
-#include "Participant.h"
+#include "Participant.cpp"
 #include "ofMain.h"
+#include "WorldBox.h"
 
 enum Direction{
     NORTH,
@@ -39,14 +40,14 @@ public:
     void endGame(void);
     
     // used primarily for player movement
-    int moveParticipant(Direction d Participant p);
+    int moveParticipant(Direction d, Participant p);
     void playerShoot(void);
     
 private:
     int difficulty;
     Player player;
     
-    World world;
+    WorldBox world;
     bool isGameOn;
 
     // enemy variables
