@@ -5,7 +5,10 @@ Game::Game(int level){
     /*
     
     */
-    initialize(difficulty);
+    difficulty = level;
+    player.
+    initialize(level);
+
 }
 
 Game::~Game(void){
