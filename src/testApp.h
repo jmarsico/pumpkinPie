@@ -29,7 +29,7 @@ class testApp : public ofBaseApp{
     int state;
     
     Menu menu;   //set up menu object
-    Game game;  //set up game object
+    //Game game;  //set up game object
     WorldBox WorldBox;
     
     
